@@ -89,24 +89,24 @@ $scope.Seconds_Between_Dates = Math.abs($scope.Seconds_from_T1_to_T2);
         else if(h===20){return "Valandų"}
         
         else if(h % 10 === 1){return "Valanda"}
-        else if(m % 10 === 0){return "Valandų"}
+        else if(h % 10 === 0){return "Valandų"}
         else {return "Valandos"}
     }
     
     $scope.min = function(m){
         
         if(m===0){return "Minučių"}
-else if(h===10){return "Minučių"}
-        else if(h===11){return "Minučių"}
-        else if(h===12){return "Minučių"}
-        else if(h===13){return "Minučių"}
-        else if(h===14){return "Minučių"}
-        else if(h===15){return "Minučių"}
-        else if(h===16){return "Minučių"}
-        else if(h===17){return "Minučių"}
-        else if(h===18){return "Minučių"}
-        else if(h===19){return "Minučių"}
-        else if(h===20){return "Minučių"}
+else if(m===10){return "Minučių"}
+        else if(m===11){return "Minučių"}
+        else if(m===12){return "Minučių"}
+        else if(m===13){return "Minučių"}
+        else if(m===14){return "Minučių"}
+        else if(m===15){return "Minučių"}
+        else if(m===16){return "Minučių"}
+        else if(m===17){return "Minučių"}
+        else if(m===18){return "Minučių"}
+        else if(m===19){return "Minučių"}
+        else if(m===20){return "Minučių"}
         
         else if(m % 10 === 1){return "Minutė"}
         else if(m % 10 === 0){return "Minučių"}
@@ -116,20 +116,20 @@ else if(h===10){return "Minučių"}
     $scope.sec = function(s){
         
         if(s===0){return "Sekundžių"}
-        else if(h===10){return "Sekundžių"}
-        else if(h===11){return "Sekundžių"}
-        else if(h===12){return "Sekundžių"}
-        else if(h===13){return "Sekundžių"}
-        else if(h===14){return "Sekundžių"}
-        else if(h===15){return "Sekundžių"}
-        else if(h===16){return "Sekundžių"}
-        else if(h===17){return "Sekundžių"}
-        else if(h===18){return "Sekundžių"}
-        else if(h===19){return "Sekundžių"}
-        else if(h===20){return "Sekundžių"}
+        else if(s===10){return "Sekundžių"}
+        else if(s===11){return "Sekundžių"}
+        else if(s===12){return "Sekundžių"}
+        else if(s===13){return "Sekundžių"}
+        else if(s===14){return "Sekundžių"}
+        else if(s===15){return "Sekundžių"}
+        else if(s===16){return "Sekundžių"}
+        else if(s===17){return "Sekundžių"}
+        else if(s===18){return "Sekundžių"}
+        else if(s===19){return "Sekundžių"}
+        else if(s===20){return "Sekundžių"}
         
         else if(s % 10 === 1){return "Sekundė"}
-        else if(m % 10 === 0){return "Sekundžių"}
+        else if(s % 10 === 0){return "Sekundžių"}
         else {return "Sekundės"}
     }
     
