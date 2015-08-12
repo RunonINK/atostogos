@@ -31,13 +31,25 @@
 
       </ion-header-bar>
       <ion-content >
-       <BR>&nbsp;<BR><BR>&nbsp;<BR><BR>&nbsp;<BR><BR>&nbsp;<BR><BR>&nbsp;<BR>
+       <BR>&nbsp;<BR><BR>&nbsp;<BR><BR>&nbsp;<BR>
                     <h1>IKI ATOSTOGŲ LIKO:</h1>
           <BR>&nbsp;<BR>
-     <h2 class="item-wrapper">{{hours}} Valandos, {{minutes}} Minutės, {{seconds}} Sekundės.</h2>
+     <h2 class="item-wrapper">{{hours}} {{val(hours)}}, {{minutes}} {{min(minutes)}}, {{seconds}} {{sec(seconds)}}.</h2>
          
               <BR>&nbsp;<BR>
               <H1>{{jau}}</H1>
+              <BR>&nbsp;<BR>
+                  <p><span>
+                      <H1>Galioja: </H1>
+<!--                  <div style="list-style-type:circle" ng-repeat="go in getGalioja()">-->
+                  <h1>{{getGalioja()[0]}}, {{getGalioja()[1]}}, {{getGalioja()[2]}}</h1>    
+<!--                  <H1 > *{{go}}</H1>-->
+                    </div>
+                      </p>
+                  
+</span>
+                  
+                  
       </ion-content>
     </ion-pane>
       

@@ -57,7 +57,7 @@ $scope.Seconds_Between_Dates = Math.abs($scope.Seconds_from_T1_to_T2);
       $scope.called =  $scope.getSiandien()
       
       if ($scope.called < 0){
-          $scope.jau = "ATOSTOGOS PRASIDĖJO!!!!!";
+          $scope.jau = "ATOSTOGOS PRASIDĖJO!!!!! VALIOOOOOOO!!!!!!";
       return  "ATOSTOGOS";
       }
       
@@ -72,6 +72,44 @@ $scope.Seconds_Between_Dates = Math.abs($scope.Seconds_from_T1_to_T2);
       
       
   };
+    
+    $scope.val = function(h){
+        
+        if(h===0){return "Valandų"}
+        
+        if(h % 10 === 1){return "Valanda"}
+        else {return "Valandos"}
+    }
+    
+    $scope.min = function(m){
+        
+        if(m===0){return "Minučių"}
+        
+        else if(m % 10 === 1){return "Minutė"}
+        else {return "Minutės"}
+    }
+    
+    $scope.sec = function(s){
+        
+        if(s===0){return "Sekundžių"}
+        
+        if(s % 10 === 1){return "Sekundė"}
+        else {return "Sekundės"}
+    }
+    
+    $scope.galioja = ["Sauliui", "Linai", "Pauliui"];
+    
+    $scope.setGalioja = function(){
+        $scope.galioja.push({text:todoText, done:false});
+        $scope.todoText = '';
+    }
+    
+    
+    $scope.getGalioja = function(){
+        return $scope.galioja;
+    }
+    
+    
   
   var myFunctionToCall = ionic.throttle(increaseCalled, 1000);
   
